@@ -1,0 +1,23 @@
+def find_all(msg, site):
+    start = 0
+    while site in msg:
+        start = msg.find(site, start)
+        if start == -1: return
+        yield start
+        start += len(site) 
+        
+# since .count() will return the number of restriction site repeats but no positions, and .find()
+# will return only the position of the first restriction site, we need to create a loop so that 
+# we can find the all the res site repeats, with .find,  along the sequence lenght
+
+#with open('C:/Documents and Settings/Administrator/Desktop/res_enz.csv', mode='r') as res_enz:
+    reader = csv.reader(res_enz)
+    with open('res_enz_new.csv', mode='w') as outfile:
+        writer = csv.writer(outfile)
+        resdict = {rows[0]:rows[1] for rows in reader}
+        
+print resdict
+
+# we made a table that contains some of the well known restrictions enzymes(key) and their restriction
+# sites(value) and saved it as .csv file. directly converted the table into a dict.
+
