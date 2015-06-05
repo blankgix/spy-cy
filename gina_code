@@ -21,3 +21,89 @@ print resdict
 # we made a table that contains some of the well known restrictions enzymes(key) and their restriction
 # sites(value) and saved it as .csv file. directly converted the table into a dict.
 
+for value in resdict.values():
+    list(find_all(msg, value))
+# we stored restriction sites as values in resdict. we want to search for each site in dna sequence named msg.
+
+
+
+#restriction site table used for resdict: 
+#  AatII	GACGT C
+Acc65I	G GTACC
+AclI	AA CGTT
+AatII 	GACGT C
+Acc65I	G GTACC
+AccI	AA CGTT
+AclI	AGC GCT
+AfeI	C TTAAG
+AflII 	A CCGGT
+AgeI 	GGGCC C
+ApaI 	G TGCAC
+ApoI	GG CGCGCC
+AscI	AT TAAT
+AseI 	GCGAT CGC
+AsiSI	C CTAGG
+AvrII	G GATCC
+BamHI 	T GATCA
+BclI 	A GATCT
+Bme1580I	GCTAG C
+BsiEI	C GTACG
+BsiWI	T CCGGA
+BspEI	T CATGA
+BspHI	T GTACA
+BsrGI	G CGCGC
+BssHII	TT CGAA
+BstBI 	GTA TAC
+BtgI	AT CGAT
+ClaI 	TTT AAA
+EaeI	C GGCCG
+EagI 	G AATTC
+EcoRI 	GAT ATC
+EcoRV 	GGCCGG CC
+FseI	TGC GCA
+HincII	A AGCTT
+HindIII 	GTT AAC
+HpaI 	G GCGCC
+KasI	GGTAC C
+KpnI 	C AATTG
+MfeI	A CGCGT
+MluI	TGG CCA
+MspA1I	C AATTG
+MfeI	A CGCGT
+MluI	TGG CCA
+MspA1I	GCC GGC
+NaeI	GG CGCC
+NarI 	C CATGG
+NcoI 	CA TATG
+NdeI 	G CCGGC
+NgoMIV	G CTAGC
+NheI 	GC GGCCGC
+NotI 	TCG CGA
+NruI 	ATGCA T
+NspI	TTAAT TAA
+PacI	A CATGT
+PciI	GTTT AAAC
+PmeI	CAC GTG
+PmlI 	TTA TAA
+PsiI	G GGCCC
+PspOMI	CTGCA G
+PstI 	CGAT CG
+PvuI	CAG CTG
+PvuII 	GAGCT C
+SacI 	CCGC GG
+SacII 	G TCGAC
+SalI 	CCTGCA GG
+SbfI	AGT ACT
+SfcI	GGC GCC
+SgrAI	CCC GGG
+SmlI	TAC GTA
+SnaBI	A CTAGT
+SpeI 	GCATG C
+SphI	AAT ATT
+SspI	AGG CCT
+StuI 	ATTT AAAT
+SwaI	T CTAGA
+XbaI 	C TCGAG
+XhoI 	C CCGGG
+
+
